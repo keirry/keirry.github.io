@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ph的博客</title>
+  
+  <subtitle>宁静致远</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://keirry.gihub.io/"/>
+  <updated>2019-08-20T01:24:55.156Z</updated>
+  <id>https://keirry.gihub.io/</id>
+  
+  <author>
+    <name>keirry</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://keirry.gihub.io/uncategorized/hello-world/"/>
+    <id>https://keirry.gihub.io/uncategorized/hello-world/</id>
+    <published>2019-08-20T01:24:55.156Z</published>
+    <updated>2019-08-20T01:24:55.156Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo 换节点操作</title>
+    <link href="https://keirry.gihub.io/hexo/hexo-%E6%8D%A2%E8%8A%82%E7%82%B9%E6%93%8D%E4%BD%9C/"/>
+    <id>https://keirry.gihub.io/hexo/hexo-换节点操作/</id>
+    <published>2019-03-04T11:03:20.000Z</published>
+    <updated>2019-08-20T01:24:55.156Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="当hexo换节点后的操作"><a href="#当hexo换节点后的操作" class="headerlink" title="当hexo换节点后的操作"></a>当hexo换节点后的操作</h1><h2 id="1、安装npm"><a href="#1、安装npm" class="headerlink" title="1、安装npm"></a>1、安装npm</h2><a id="more"></a><h4 id="安装最新版nodejs"><a href="#安装最新版nodejs" class="headerlink" title="安装最新版nodejs"></a>安装最新版nodejs</h4><h5 id="更新ubuntu软件源"><a href="#更新ubuntu软件源" class="headerlink" title="更新ubuntu软件源"></a>更新ubuntu软件源</h5><pre><code>sudo apt-get updatesudo apt-get install -y python-software-properties software-properties-commonsudo add-apt-repository ppa:chris-lea/node.jssudo apt-get update</code></pre><h5 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h5><pre><code>sudo apt-get install nodejssudo apt install nodejs-legacysudo apt install npm</code></pre><h5 id="更新npm的包镜像源，方便快速下载"><a href="#更新npm的包镜像源，方便快速下载" class="headerlink" title="更新npm的包镜像源，方便快速下载"></a>更新npm的包镜像源，方便快速下载</h5><pre><code>sudo npm config set registry https://registry.npm.taobao.orgsudo npm config list</code></pre><h5 id="全局安装n管理器-用于管理nodejs版本"><a href="#全局安装n管理器-用于管理nodejs版本" class="headerlink" title="全局安装n管理器(用于管理nodejs版本)"></a>全局安装n管理器(用于管理nodejs版本)</h5><pre><code>sudo npm install n -g</code></pre><h5 id="安装最新的nodejs（stable版本）"><a href="#安装最新的nodejs（stable版本）" class="headerlink" title="安装最新的nodejs（stable版本）"></a>安装最新的nodejs（stable版本）</h5><pre><code>sudo n stablesudo node -v</code></pre><h4 id="QA"><a href="#QA" class="headerlink" title="QA"></a>QA</h4><h5 id="Q-apt-get-update找不到文件"><a href="#Q-apt-get-update找不到文件" class="headerlink" title="Q: apt-get update找不到文件"></a>Q: apt-get update找不到文件</h5><pre><code>// error codeW: The repository &apos;http://ppa.launchpad.net/chris-lea/node.js/ubuntu xenial Release&apos; does not have a Release file.N: Data from such a repository can&apos;t be authenticated and is therefore potentially dangerous to use.N: See apt-secure(8) manpage for repository creation and user configuration details.E: Failed to fetch http://ppa.launchpad.net/chris-lea/node.js/ubuntu/dists/xenial/main/binary-amd64/Packages  404  Not FoundE: Some index files failed to download. They have been ignored, or old ones used instead.</code></pre><h5 id="A-修改node相关文件：-etc-apt-sources-list-d-chris-lea-ubuntu-node-js-xenial-list"><a href="#A-修改node相关文件：-etc-apt-sources-list-d-chris-lea-ubuntu-node-js-xenial-list" class="headerlink" title="A: 修改node相关文件：/etc/apt/sources.list.d/chris-lea-ubuntu-node_js-xenial.list"></a>A: 修改node相关文件：/etc/apt/sources.list.d/chris-lea-ubuntu-node_js-xenial.list</h5><pre><code>deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu trusty maindeb-src http://ppa.launchpad.net/chris-lea/node.js/ubuntu trusty main</code></pre><h5 id="Q-node-v异常"><a href="#Q-node-v异常" class="headerlink" title="Q: node -v异常"></a>Q: node -v异常</h5><pre><code>node -v-bash: /usr/local/bin/node: Permission deniedsudo node -vSegmentation fault (core dumped)</code></pre><h5 id="A-重新安装nodejs"><a href="#A-重新安装nodejs" class="headerlink" title="A: 重新安装nodejs"></a>A: 重新安装nodejs</h5><pre><code>手动移除 /usr/local/lib/node_modules整个目录手动移除 /usr/local/bin/node手动移除 /usr/local/bin/n手动移除 /usr/local/bin/npm</code></pre><p>链接：<a href="https://www.jianshu.com/p/515ee48b6774" target="_blank" rel="noopener">https://www.jianshu.com/p/515ee48b6774</a></p><h2 id="2、安装hexo"><a href="#2、安装hexo" class="headerlink" title="2、安装hexo"></a>2、安装hexo</h2><pre><code>npm install hexo --save</code></pre><h2 id="3、安装相关依赖包和插件"><a href="#3、安装相关依赖包和插件" class="headerlink" title="3、安装相关依赖包和插件"></a>3、安装相关依赖包和插件</h2><pre><code>npm install --cache /tmp/empty-cachenpm install</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;当hexo换节点后的操作&quot;&gt;&lt;a href=&quot;#当hexo换节点后的操作&quot; class=&quot;headerlink&quot; title=&quot;当hexo换节点后的操作&quot;&gt;&lt;/a&gt;当hexo换节点后的操作&lt;/h1&gt;&lt;h2 id=&quot;1、安装npm&quot;&gt;&lt;a href=&quot;#1、安装npm&quot; class=&quot;headerlink&quot; title=&quot;1、安装npm&quot;&gt;&lt;/a&gt;1、安装npm&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://keirry.gihub.io/categories/hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>此blog搭建流程</title>
+    <link href="https://keirry.gihub.io/hexo/%E6%AD%A4blog%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/"/>
+    <id>https://keirry.gihub.io/hexo/此blog搭建流程/</id>
+    <published>2019-02-25T03:00:42.000Z</published>
+    <updated>2019-08-20T01:24:55.156Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="linux上面安装node-js"><a href="#linux上面安装node-js" class="headerlink" title="linux上面安装node.js"></a>linux上面安装node.js</h1><pre><code>参考：https://linux.cn/article-5766-1.html</code></pre><ul><li>1 安装必要的包：<br>  apt-get install python gcc make g++   （centos 是：yum install python gcc+ gcc-c++)</li><li>2 下载node.js包：<br>wget <a href="https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz" target="_blank" rel="noopener">https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz</a><br>tar zxvf node-v8.12.0.tar.gz</li><li>3 编译安装<br>进入源代码的目录，然后运行.configure文件<br>cd node-v8.12.0<br>./configure<br>然后执行make install</li><li>4 测试是否安装完成<br>node -v<a id="more"></a></li></ul><h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><ul><li>创建目录<br>mkdir hexo</li><li>切换目录<br>cd hexo</li><li>安装Git(已安装可跳过)<br>yum install git-core</li><li>安装 Hexo<br>npm install -g hexo-cli</li><li>初始化 Hexo<br>hexo init<h5 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h5>npm install hexo-generator-index –save<br>npm install hexo-generator-archive –save<br>npm install hexo-generator-category –save<br>npm install hexo-generator-tag –save<br>npm install hexo-server –save<br>npm install hexo-deployer-git –save<br>npm install hexo-deployer-heroku –save<br>npm install hexo-deployer-rsync –save<br>npm install hexo-deployer-openshift –save<br>npm install hexo-renderer-marked –save<br>npm install hexo-renderer-stylus –save<br>npm install hexo-generator-feed –save<br>npm install hexo-generator-sitemap –save<br>npm install –save hexo-helper-live2d</li></ul><h1 id="修改hexo配置："><a href="#修改hexo配置：" class="headerlink" title="修改hexo配置："></a>修改hexo配置：</h1><p>修改 hexo目录下_config.yml 文件：</p><pre><code># Sitetitle: Hexosubtitle: 宁静致远description:keywords:author: phlanguage: zh-Hanstimezone: Asia/ShangHai# Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:  type: git  repo: https://github.com/bigbai-ing/bigbai-ing.github.io.git  branch: master</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;linux上面安装node-js&quot;&gt;&lt;a href=&quot;#linux上面安装node-js&quot; class=&quot;headerlink&quot; title=&quot;linux上面安装node.js&quot;&gt;&lt;/a&gt;linux上面安装node.js&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;参考：https://linux.cn/article-5766-1.html&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;1 安装必要的包：&lt;br&gt;  apt-get install python gcc make g++   （centos 是：yum install python gcc+ gcc-c++)&lt;/li&gt;
+&lt;li&gt;2 下载node.js包：&lt;br&gt;wget &lt;a href=&quot;https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://nodejs.org/dist/v8.12.0/node-v8.12.0.tar.gz&lt;/a&gt;&lt;br&gt;tar zxvf node-v8.12.0.tar.gz&lt;/li&gt;
+&lt;li&gt;3 编译安装&lt;br&gt;进入源代码的目录，然后运行.configure文件&lt;br&gt;cd node-v8.12.0&lt;br&gt;./configure&lt;br&gt;然后执行make install&lt;/li&gt;
+&lt;li&gt;4 测试是否安装完成&lt;br&gt;node -v
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://keirry.gihub.io/categories/hexo/"/>
+    
+    
+  </entry>
+  
+</feed>
